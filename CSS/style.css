@@ -7,10 +7,69 @@ html {
 *:after {
   box-sizing: inherit;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+--black: #000000;
+--catalina: #06327d;
+--bluetiful: #2b70e4;
+--vegan: #209d5c;
+--sunglow: #ffd034;
+--white: #ffffff;
+--lightblue: #cadbf8;
+--border-radius: 10px;
+--montserrat: Monserrat;
+
+ }
 
 body {
-  color: black;
+  font-family: var(--Montserrat);
+  line-height: 1.5;
+  font-size: 1.125rem;
+  color: var(--catalina);
   background-color: #063270;
   margin: 0;
   padding: 0;
 }
+h1 {
+line-height: 1.1667;
+font-size: 3rem;
+font-weight: 300;
+text-transform: uppercase;
+margin: 0;
+}
+h2 {
+line-height: 1.1667;
+font-size: 2.5rem;
+font-weight: 300;
+text-transform: uppercase;
+margin: 0;
+}
+h3 {
+  line-height: 1.1667;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 auto;
+  margin: 0;
+  justify-content: center;
+  }
+
+  .button1 {
+    text-transform: uppercase;
+    background-color: var(--catalina);
+    color: var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+
+  }
+  .button2 {
+    text-transform: uppercase;
+    background-color: var(--vegan);
+    color: var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
