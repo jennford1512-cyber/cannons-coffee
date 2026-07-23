@@ -25,20 +25,20 @@ html {
  }
 
 body {
-  font-family: var(--Montserrat);
+  font-family: var(--montserrat);
   line-height: 1.5;
   font-size: 1.125rem;
   color: var(--black);
   background-color: #063270;
   margin: 0;
-  padding: 0;
-  border-radius: 10px;
+  /* padding: 0; */
+  /* border-radius: 10px; */
 }
 main {
-  text-align: center;
+  text-align: left;
   border-bottom: 10px solid var(--sunglow);
   border-top: 10px solid var(--sunglow);
- margin: 3rem;
+ margin: 0;
  padding: 0;
 }
 h1 {
@@ -68,8 +68,8 @@ h3 {
   padding: 2rem;
   margin: 0;
   font-weight: 300;
- 
-  }
+
+ }
 img {
   max-width: 100%;
 
@@ -78,11 +78,8 @@ img {
   max-width: 1200px;
   padding: 0;
   margin: 0 auto;
-  font-family: var(--Montserrat);
-  /* justify-content: center; */
-  /* display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem; */
+
+
   }
 
   .button1 {
@@ -93,6 +90,7 @@ img {
     text-decoration: none;
    display: inline-block;
     padding: 0.75rem;
+     font-size: .8rem;
 
   }
   .button2 {
@@ -105,6 +103,7 @@ img {
     display: inline-block;
     margin: 0;
     padding: 0.5rem 1rem;
+     font-size: .8rem;
   }
 
   .button3 {
@@ -117,6 +116,7 @@ img {
     display: inline-block;
     margin: 0;
     padding: 0.5rem 1rem;
+     font-size: .8rem;
   }
   .button4 {
     text-transform: uppercase;
@@ -128,6 +128,7 @@ img {
     display: inline-block;
     margin: 0;
     padding: 0.5rem 1rem;
+     font-size: .8rem;
   }
   .button5 {
     text-transform: uppercase;
@@ -139,6 +140,7 @@ img {
     display: inline-block;
     margin: 0;
     padding: 0.5rem 1rem;
+     font-size: .8rem;
   }
    nav ul {
   display: flex;
@@ -155,7 +157,8 @@ nav a {
   padding: 1rem;
   text-transform: uppercase;
 }
-  header {
+ 
+header {
   text-align: center;
   display: flex;
   flex-flow: row wrap;
@@ -171,7 +174,7 @@ nav a {
   justify-content: space-evenly;
   padding: 0.4rem;
   margin: 0;
-  /* align-items: center; */
+
 }
 
 .button {
@@ -183,50 +186,57 @@ nav a {
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
-
+.latte {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: left;
+  background-color: var(--white);
+  /* padding: 4rem; */
+  border-bottom: 5px solid var(--sunglow);
+  border-top: 5px solid var(--sunglow);
+}
 
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0;
-  padding: 0;
-/* gap: 1rem; */
+  gap: 1rem;
 text-align: left;
 background-color: var(--white);
+align-items: center;
 }
 .container2 {
    background-color: var(--lightblue);
   grid-template-columns: 1fr;
   display: grid;
-  gap: 4rem;
+  gap: 1rem;
   padding: 2rem;
   margin: 0;
   
 
 }
-.container2 img {
+/* .container2 img {
   border-radius: 10px;
-}
-.child1 {
-  border-radius: 0;
-  padding: 0;
-  margin: 0;
-}
-.child2 {
-   padding: 1rem;
-   align-self: center;
-   
-}
+} */
 
+.child2 {
+   padding: 2rem;
+   align-self: center;
+
+   }
+/* .card {
+  padding: 0;
+  margin: 0 auto;
+} */
 
 .coffeecomp {
   width: 100%;
 
 }
 
-.movetoblue {
+/* .movetoblue {
   grid-column: 1/5;
-}
+} */
 
 footer {
   color: var(--white);
@@ -234,9 +244,6 @@ footer {
   margin: 0;
 text-align: center;
 }
-/* .card img {
-  border-radius: var(--border-radius);
-} */
 
 
 @media (min-width: 650px) {
@@ -250,11 +257,15 @@ text-align: center;
 @media (min-width: 1000px) {
   header {
    justify-content: space-between;
+   flex-direction: row;
   
   }
   .container2 {
  grid-template-columns: 1fr 1fr 1fr 1fr;
      gap: 2rem;
   }
- 
-}
+  /* .child2 img {
+    max-width: 100%;
+
+  } */
+ }
