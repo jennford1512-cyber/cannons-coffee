@@ -26,6 +26,66 @@
             </nav>
         </header>
         <main>
+            <h1>☕ Cannons Coffee Inquiry</h1>
+
+            <h3>We'd love to hear from you!</h3>
+
+            <form id="inquiry-form">
+
+                <fieldset>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br>
+
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" required></textarea>
+                    <br>
+
+
+
+
+                    <!-- Favorite coffee flavor -->
+
+                    <label for="flavor">Favorite Coffee Flavor:</label>
+                    <br>
+                    <select id="flavor" name="flavor" required>
+                        <option value="">-- Choose a flavor --</option>
+                        <option value="Vanilla">Vanilla</option>
+                        <option value="Caramel">Caramel</option>
+                        <option value="Hazelnut">Hazelnut</option>
+                    </select>
+
+                    <br>
+
+
+                    <!-- Radio buttons -->
+
+                    <p>What are you interested in?</p>
+
+                    <input type="radio" id="buying" name="interest" value="buying coffee" required>
+                    <label for="buying">Buying Coffee ☕</label>
+                    <br>
+                    <input type="radio" id="employment" name="interest" value="seeking employment">
+                    <label for="employment">Seeking Employment 💼</label>
+
+                    <br>
+
+
+                    <button type="submit">Submit Inquiry ☕</button>
+                </fieldset>
+            </form>
+
+
+            <div class="thank-you"></div>
 
         </main>
         <footer>
